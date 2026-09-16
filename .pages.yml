@@ -7,10 +7,18 @@ content:
     label: "Bauberichte"
     type: collection
     path: "_posts"
+    format: md
+    slug: "{{year}}-{{month}}-{{day}}-{{fields.title | slugify}}"
     fields:
       - name: title
-        label: "Titel"
+        label: "Titel des Projekts"
         type: string
+        required: true
+      - name: date
+        label: "Datum"
+        type: date
+        required: true
       - name: body
-        label: "Inhalt"
+        label: "Baubericht"
         type: rich-text
+        options: {}
