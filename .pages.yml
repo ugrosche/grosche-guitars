@@ -1,0 +1,29 @@
+media:
+  input: assets/images
+  output: /assets/images
+
+content:
+  - label: "Bauberichte"
+    type: collection
+    path: "_posts"
+    format: md
+    slug: "{{year}}-{{month}}-{{day}}-{{fields.title | slugify}}"
+    fields:
+      - name: title
+        label: "Titel des Projekts"
+        type: string
+        required: true
+      - name: date
+        label: "Datum"
+        type: date
+        required: true
+      - name: header
+        label: "Titelbild"
+        type: object
+        fields:
+          - name: teaser
+            label: "Vorschaubild"
+            type: image
+      - name: body
+        label: "Baubericht & Fotodokumentation"
+        type: rich-text
