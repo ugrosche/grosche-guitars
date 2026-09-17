@@ -2,23 +2,20 @@ media:
   input: assets/images
   output: /assets/images
 
+
 content:
-  - name: posts
-    label: "Bauberichte"
+
+  - name: guitars
+    label: "Gitarren"
     type: collection
-    path: "_posts"
+    path: "_pages/guitars"
     format: md
-    slug: "{{year}}-{{month}}-{{day}}-{{fields.title | slugify}}"
+
     fields:
       - name: title
-        label: "Titel des Projekts"
+        label: Titel
         type: string
-        required: true
-      - name: date
-        label: "Datum"
-        type: date
-        required: true
+
       - name: body
-        label: "Baubericht"
+        label: Beschreibung
         type: rich-text
-        options: {}
