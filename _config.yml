@@ -332,3 +332,11 @@ defaults:
       share: true
       related: true
 
+collections:
+  guitars:
+    output: true
+    permalink: /guitars/:name/
+
+  workshop:
+    output: true
+    permalink: /workshop/:name/
