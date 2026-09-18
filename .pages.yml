@@ -4,20 +4,16 @@ media:
 
 content:
 
-  # Gitarrenprojekte
   - name: guitars
     label: "Gitarren"
     type: collection
-    path: "_posts/guitars"
+    path: "_guitars"
     format: md
-
-    slug: "{{fields.title | slugify}}"
 
     fields:
       - name: title
         label: "Gitarrenname"
         type: string
-        required: true
 
       - name: build_year
         label: "Baujahr"
@@ -35,11 +31,11 @@ content:
         label: "Beschreibung"
         type: rich-text
 
-  # Laufende Bauberichte
   - name: build_reports
     label: "Bauberichte"
     type: collection
-    path: "_posts/build-reports"
+    path: "_posts"
+
     format: md
 
     slug: "{{year}}-{{month}}-{{day}}-{{fields.title | slugify}}"
@@ -47,33 +43,33 @@ content:
     fields:
       - name: title
         label: "Titel"
+
         type: string
-        required: true
 
       - name: date
         label: "Datum"
+
         type: date
-        required: true
 
       - name: body
         label: "Baubericht"
+
         type: rich-text
 
-  # Werkstatt
   - name: workshop
     label: "Werkstatt"
     type: collection
-    path: "_posts/workshop"
-    format: md
+    path: "_workshop"
 
-    slug: "{{fields.title | slugify}}"
+    format: md
 
     fields:
       - name: title
         label: "Titel"
+
         type: string
-        required: true
 
       - name: body
         label: "Inhalt"
+
         type: rich-text
