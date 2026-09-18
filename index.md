@@ -5,7 +5,7 @@ title: "Grosche Guitars"
 
 header:
   overlay_image: /assets/images/hero-guitar.jpg
-  overlay_filter: 0.4
+  overlay_filter: 0.35
   caption: "Handbuilt Acoustic Guitars"
 ---
 
