@@ -3,7 +3,7 @@ title: "Silent Guitar"
 layout: single
 
 build_year: "2026"
-guitar_type: "Archtop "Massar"
+guitar_type: "Archtop Massari"
 
 cover_image: "/assets/images/silent-guitar-front.jpg"
 ---
