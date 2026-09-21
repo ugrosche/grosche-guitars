@@ -1,6 +1,7 @@
 ---
 
 ## title: "Archtop Massari"
+
 layout: single
 permalink: /guitars/archtop-massari/
 
