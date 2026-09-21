@@ -1,15 +1,32 @@
-main:
-  - title: "Start"
-    url: /
+---
+title: "Meine Gitarren"
+permalink: /gitarren/
+layout: single
+author_profile: true
+---
 
-  - title: "Gitarren"
-    url: /gitarren/
+# Meine Gitarren
 
-  - title: "Werkstatt"
-    url: /werkstatt/
+Hier stelle ich meine abgeschlossenen und aktuellen Gitarrenbau-Projekte vor.
 
-  - title: "Galerie"
-    url: /galerie/
+{% for guitar in site.guitars %}
 
-  - title: "Über mich"
-    url: /about/
+## {{ guitar.title }}
+
+{% if guitar.cover_image %}
+{{ guitar.cover_image | relative_url }}]({{ guitar.url | relative_url }})
+{% endif %}
+
+{% if guitar.build_year %}
+**Baujahr:** {{ guitar.build_year }}
+{% endif %}
+
+{% if guitar.guitar_type %}
+**Typ:** {{ guitar.guitar_type }}
+{% endif %}
+
+{{ guitar.url | relative_url }}
+
+---
+
+{% endfor %}
