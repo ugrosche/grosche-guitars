@@ -8,7 +8,7 @@ content:
     label: "Gitarren"
     type: collection
     path: "_guitars"
-    format: md
+    format: yaml-frontmatter
 
     fields:
       - name: title
