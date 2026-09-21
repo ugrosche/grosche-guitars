@@ -340,3 +340,12 @@ collections:
   workshop:
     output: true
     permalink: /workshop/:name/
+
+defaults:
+
+  - scope:
+      path: ""
+      type: guitars
+    values:
+      layout: single
+      author_profile: true
