@@ -4,32 +4,72 @@ media:
 
 content:
 
-  - name: guitars
-    label: "Gitarren"
-    type: collection
-    path: "_guitars"
-    format: yaml-frontmatter
+- name: guitars
+  label: "Gitarren"
+  type: collection
+  path: "_guitars"
+  format: md
 
-    fields:
-      - name: title
-        label: "Gitarrenname"
-        type: string
+  slug: "{{fields.title | slugify}}"
 
-      - name: build_year
-        label: "Baujahr"
-        type: string
+  fields:
 
-      - name: guitar_type
-        label: "Typ"
-        type: string
+    - name: title
+      label: "Gitarrenname"
+      type: string
+      required: true
 
-      - name: cover_image
-        label: "Titelbild"
-        type: image
+    - name: build_year
+      label: "Baujahr"
+      type: string
 
-      - name: body
-        label: "Beschreibung"
-        type: rich-text
+    - name: guitar_type
+      label: "Typ"
+      type: string
+
+    - name: cover_image
+      label: "Titelbild"
+      type: image
+
+    - name: introduction
+      label: "Projektbeschreibung"
+      type: rich-text
+
+    - name: build_steps
+      label: "Bauschritte"
+      type: object
+      list: true
+
+      fields:
+
+        - name: title
+          label: "Bauschritt"
+          type: string
+          required: true
+
+        - name: description
+          label: "Beschreibung"
+          type: rich-text
+
+        - name: images
+          label: "Bilder"
+          type: object
+          list: true
+
+          fields:
+
+            - name: image
+              label: "Bild"
+              type: image
+              required: true
+
+            - name: caption
+              label: "Bildbeschreibung"
+              type: string
+
+            - name: alt
+              label: "Alternativtext"
+              type: string
 
   - name: build_reports
     label: "Bauberichte"
