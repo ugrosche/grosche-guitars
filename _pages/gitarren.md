@@ -20,4 +20,4 @@ Hier stelle ich meine abgeschlossenen und laufenden Gitarrenbau-Projekte vor.
 
 Meine erste Archtop-Gitarre.
 
-/guitars/archtop/
+/guitars/archtop-massari/
