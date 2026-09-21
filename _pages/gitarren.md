@@ -1,12 +1,11 @@
 ---
 title: "Meine Gitarren"
+layout: collection
 permalink: /gitarren/
-layout: single
-author_profile: true
+collection: guitars
+entries_layout: grid
+classes: wide
+author_profile: false
 ---
 
 Hier stelle ich meine abgeschlossenen und laufenden Gitarrenbau-Projekte vor.
-
-## Archtop Massari
-
-{{ "/guitars/archtop-massari/" | relative_url }}
